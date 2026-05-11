@@ -44,14 +44,7 @@ plymouth.enable = false;
             "result"
           ];
         };
-programs.niri = {
-  enable = true;
-  settings = {
-    binds = {
-      "Mod+T".action.spawn = "foot";
-      "Mod+B".action.spawn = "firefox";
-    };
-  };
+
       };
     };
   };
@@ -118,6 +111,14 @@ programs.niri = {
       enable = true;
       defaultEditor = true;
     };
+programs.niri = {
+  enable = true;
+  settings = {
+    binds = {
+      "Mod+T".action.spawn = "foot";
+      "Mod+B".action.spawn = "firefox";
+    };
+  };
   };
 
 
