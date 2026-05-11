@@ -2,6 +2,12 @@
 
   system.stateVersion = "25.11";
 
+  imports =
+    [ # Include the results of the hardware scan.
+      ./hardware-configuration.nix
+    ];
+
+
   boot = {
     kernelParams = [
       "boot.shell_on_fail"
