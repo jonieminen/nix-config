@@ -83,7 +83,7 @@
     bluetooth.enable = true;
   };
 
-  services.yubikey-agent.enable = true;
+  # services.yubikey-agent.enable = true;
 
   # Audio -- dont touch
   services.pipewire = {
