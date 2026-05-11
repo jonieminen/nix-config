@@ -99,7 +99,7 @@ plymouth.enable = false;
   environment.systemPackages = with pkgs; [
     firefox
     foot
-    niri
+    # niri
     rsync
     yazi
   ];
@@ -121,11 +121,12 @@ programs.niri = {
   };
   };
 
+services.desktopManager.plasma6.enable = true;
 
 services.greetd = {
   enable = true;
   settings.default_session = {
-    command = "niri-session";
+    command = "startplasma-wayland";
     user = "joni";
   };
 };
