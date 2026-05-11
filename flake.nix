@@ -24,7 +24,7 @@
 
       # nix build .#prose
       packages = {
-        "prose" = flake.nixosConfigurations.prose.config.system.build.kexecTree;
+        # "prose" = flake.nixosConfigurations.prose.config.system.build.kexecTree;
       };
     };
 
@@ -39,7 +39,7 @@
             ./nixosConfigurations/prose
             ./nix-settings.nix
             inputs.home-manager.nixosModules.home-manager
-            inputs.homestakeros-base.nixosModules.kexecTree
+            # inputs.homestakeros-base.nixosModules.kexecTree
           ];
         };
 
