@@ -12,6 +12,8 @@
     kernelParams = [
       "boot.shell_on_fail"
     ];
+plymouth.enable = false;
+
   };
 
   # home-manager options: https://nix-community.github.io/home-manager/options.xhtml
