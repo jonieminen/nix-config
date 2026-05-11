@@ -110,7 +110,6 @@
     };
   };
 
-  services.getty.autologinUser = "joni";
 
 services.greetd = {
   enable = true;
