@@ -112,6 +112,14 @@
 
   services.getty.autologinUser = "joni";
 
+services.greetd = {
+  enable = true;
+  settings.default_session = {
+    command = "niri-session";
+    user = "joni";
+  };
+};
+
   systemd.sleep.extraConfig = ''
     HibernateOnACPower=no
   '';
